@@ -6,7 +6,7 @@ obj = { first: 1, second: 2 }
 // 인터페이스
 // 타입스크립트에서는 객체의 타입을 정의할 수 있게 하는 interface라는 키워드를 제공
 // 객체의 타입을 정의하는것이 목적
-interface IPerson {
+export interface IPerson {
   name: string  // 필수 속성
   age: number   // 필수 속성
   etc?: boolean // 선택 속성
