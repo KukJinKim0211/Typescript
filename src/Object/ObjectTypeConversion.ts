@@ -22,4 +22,3 @@ let name1 = (<IPerson>obj).name;
 let name2 = (obj as IPerson).name;
 let age1 = (<IPerson>obj).age;
 let age2 = (obj as IPerson).age;
-console.log(name1, name2, age1, age2);
