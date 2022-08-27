@@ -5,8 +5,8 @@
   }
 */
 class Person {
-  name: string
-  age?: number
+  name: string;
+  age?: number;
   constructor(name: string, age?: number) {
     this.name = name;
     this.age = age;
@@ -17,10 +17,10 @@ class Person {
 // 생성자의 매개변수에 접근 제한자를 붙이면 해당 매개변수의 이름을 가진 속성이 클래스에 선언된 것 처럼 동작
 // Person class를 함축해서 구현
 class Person2 {
-  constructor(public name: string, public age: number) { }
+  constructor(public name: string, public age: number) {}
 }
 
-let jack: Person = new Person('Jack', 32);
+let jack: Person = new Person("Jack", 32);
 console.log(jack);
 
 /////////// 인터페이스
@@ -32,12 +32,12 @@ console.log(jack);
 */
 // 클래스 인터페이스 구현 예제
 interface IPerson2 {
-  name: string
-  age?: number
+  name: string;
+  age?: number;
 }
 // 클래스 몸통에도 인터페이스가 정의하고 있는 속성을 멤버 속성으로 포함해야 한다.
 class Person3 implements IPerson2 {
-  constructor(public name: string, public age: number) { }
+  constructor(public name: string, public age: number) {}
 }
 
 //////////// 추상 클래스
@@ -56,15 +56,15 @@ class Person3 implements IPerson2 {
   }
 */
 abstract class AbstractPerson {
-  abstract name: string
-  constructor(public age?: number) { }
+  abstract name: string;
+  constructor(public age?: number) {}
 }
 class Person4 extends AbstractPerson {
   constructor(public name: string, public age?: number) {
     super(age);
   }
 }
-let jack2: Person4 = new Person4('Jack', 32);
+let jack2: Person4 = new Person4("Jack", 32);
 
 ///////////// static 속성을 가진다
 class A {
