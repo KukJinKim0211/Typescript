@@ -56,7 +56,5 @@
 }
 
 // range 함수 구현
-{
-  const range = (from: number, to: number): number[] =>
-    from < to ? [from, ...range(from + 1, to)] : [];
-}
+export const range = (from: number, to: number): number[] =>
+  from < to ? [from, ...range(from + 1, to)] : [];
