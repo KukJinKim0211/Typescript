@@ -57,4 +57,7 @@
 
     return result;
   };
+
+  const array: string[] = mergeArray(["hello"], ["typescript", "world"]);
+  console.log(array);
 }
