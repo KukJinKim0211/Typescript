@@ -1,0 +1,4 @@
+npm init --y
+npm i -D typescript ts-node @types/node
+
+tsc --init
